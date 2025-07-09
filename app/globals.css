@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
-:root{
+:root {
   background: #092327;
   color: white;
   font-family: var(--font-dm-sans);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Adjust based on your navbar height */
+}
+
 @font-face {
-  font-family: 'Decalotype';
-  src: url('/fonts/Decalotype-Regular.woff2') format('woff2');
+  font-family: "Decalotype";
+  src: url("/fonts/Decalotype-Regular.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
