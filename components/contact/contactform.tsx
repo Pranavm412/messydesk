@@ -28,7 +28,7 @@ export default function ContactForm() {
   // };
 
   return (
-    <section className="bg-[#092327] relative px-4 pb-20 z-0">
+    <section className="bg-[#092327] relative px-4 pb-20 z-0 text-[#092327]">
       <div className="absolute inset-0 bg-pattern-grids pointer-events-none -z-1" />
       <div className="max-w-3xl mx-auto">
         <form
@@ -45,7 +45,7 @@ export default function ContactForm() {
                 type="text"
                 name="user_name"
                 required
-                className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c97f4e]"
+                className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#092327]"
               />
             </div>
             <div>
@@ -56,7 +56,7 @@ export default function ContactForm() {
                 type="email"
                 name="user_email"
                 required
-                className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c97f4e]"
+                className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#092327]"
               />
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function ContactForm() {
               <input
                 type="tel"
                 name="user_phone"
-                className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c97f4e]"
+                className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#092327]"
               />
             </div>
             <div>
@@ -78,7 +78,7 @@ export default function ContactForm() {
               <select
                 name="user_service"
                 required
-                className="w-full border border-[#092327] rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-[#c97f4e]"
+                className="w-full border border-[#092327] rounded-md px-4 py-2 bg-[#f0ece1] focus:outline-none focus:ring-2 focus:ring-[#092327]"
               >
                 <option value="">Select a service</option>
                 <option value="Wedding">Wedding</option>
@@ -96,7 +96,7 @@ export default function ContactForm() {
               name="message"
               rows={5}
               required
-              className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c97f4e]"
+              className="w-full border border-[#092327] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#092327]"
             ></textarea>
           </div>
           <button

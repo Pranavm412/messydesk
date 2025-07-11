@@ -37,7 +37,7 @@ export default function AboutUs() {
         <div className="w-full md:w-1/2 fade-in">
           <div className="w-full h-[300px] md:h-[400px] relative rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/images/1.png" // Replace with actual image
+              src="/images/group.jpg" // Replace with actual image
               alt="About Messy Desk Studio"
               fill
               className="object-cover"

@@ -9,13 +9,13 @@ import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const mediaItems = [
-  { type: "image", src: "/images/1.png" },
-  { type: "video", src: "/videos/Real Estate Ad Instagram Post.webm" },
-  { type: "image", src: "/images/1.png" },
-  { type: "video", src: "/videos/Real Estate Ads Video.webm" },
-  { type: "image", src: "/images/1.png" },
-  { type: "video", src: "/videos/Real Estate Ads Video.webm" },
-  { type: "image", src: "/images/1.png" },
+  { type: "image", src: "/images/Maison Ferra.png" },
+  { type: "video", src: "/videos/Smoothie Bowl Ad.mp4" },
+  { type: "image", src: "/images/Stationery Design.png" },
+  { type: "video", src: "/videos/Porsche Video.mp4" },
+  { type: "image", src: "/images/homedemo.png" },
+  { type: "video", src: "/videos/Real Estate Reel.webm" },
+  { type: "image", src: "/images/brochure.png" },
 ];
 
 export default function Portfolio() {

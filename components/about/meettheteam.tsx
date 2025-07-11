@@ -4,33 +4,33 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "Ava Roy",
-    role: "Creative Director",
+    name: "Anurag",
+    role: "Motion Graphics Designer",
     image: "/team/ava.jpg", // replace with real images
   },
   {
-    name: "Kunal Mehra",
-    role: "Art Director",
+    name: "Arvind",
+    role: "Video Editor",
     image: "/team/kunal.jpg",
   },
   {
-    name: "Sara Lim",
-    role: "UX/UI Designer",
+    name: "Moon",
+    role: "Graphic Designer",
     image: "/team/sara.jpg",
   },
   {
-    name: "Jordan Kim",
-    role: "Developer",
+    name: "Nived",
+    role: "3D Modeller",
     image: "/team/jordan.jpg",
   },
   {
-    name: "Nina Das",
-    role: "Motion Designer",
+    name: "Pranav",
+    role: "Web Designer",
     image: "/team/nina.jpg",
   },
   {
-    name: "Leo Singh",
-    role: "Marketing Strategist",
+    name: "Sidhu",
+    role: "3D Designer",
     image: "/team/leo.jpg",
   },
 ];

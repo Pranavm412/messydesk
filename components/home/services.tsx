@@ -162,7 +162,7 @@ export default function Services() {
                   {service.subtitle}
                 </p>
                 <Link
-                  href="/"
+                  href="/services"
                   className="inline-block px-6 py-2 border-2 border-yellow-400 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-[#092327] transition"
                 >
                   Learn More

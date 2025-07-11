@@ -11,88 +11,92 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     number: "1",
-    title: "Web Design",
+    title: "Branding & Design",
     features: [
-      "Responsive layouts for all devices",
-      "User-friendly and intuitive UI",
-      "SEO optimized for better ranking",
-      "Fast loading times",
+      "Logo Design",
+      "Brand Identity (Fonts, Colors, Guidelines)",
+      "Brochures, Catalogs & Menus",
+      "Hoarding Board Designs",
+      "Personalized Poster Designs",
+      "Business Cards, Letterheads & Stationery",
+      "Presentation Decks & Social Media Templates",
     ],
     images: [
-      "/images/web1.jpg",
-      "/images/web2.jpg",
-      "/images/web3.jpg",
-      "/images/web4.jpg",
+      "/images/branding.png",
+      "/images/Kurta Kartel.png",
+      "/images/Stationery Design.png",
+      "/images/brochure.png",
     ],
-    portfolioUrl: "https://yourportfolio.com/web-design",
+    portfolioUrl: "/portfolio",
   },
   {
     number: "2",
-    title: "Graphic Design",
+    title: "Video Production",
     features: [
-      "Brand identity and logo design",
-      "Marketing materials and brochures",
-      "Custom illustrations",
-      "Print and digital graphics",
+      "Instagram Reels, Shorts & Ads",
+      "Logo Reveal Animations",
+      "Motion Graphics / Infographic Videos",
+      "Explainer Videos (2D/3D)",
+      "Product Shoots & Editing",
+      "Full Campaign: Shoot → Edit → Post",
     ],
     images: [
-      "/images/graphic1.jpg",
-      "/images/graphic2.jpg",
-      "/images/graphic3.jpg",
-      "/images/graphic4.jpg",
+      "/videos/Logo Animation.mp4",
+      "/videos/Real Estate Post.webm",
+      "/videos/Smoothie Bowl Ad.mp4",
+      "/videos/Coffee Ad Video.mp4",
     ],
-    portfolioUrl: "https://yourportfolio.com/graphic-design",
+    portfolioUrl: "/portfolio",
   },
   {
     number: "3",
-    title: "Digital Marketing",
+    title: "Web Design",
     features: [
-      "Social media strategy and management",
-      "Email marketing campaigns",
-      "Paid ads optimization",
-      "Analytics and reporting",
+      "Landing Pages for Campaigns",
+      "Portfolio / Product Showcase Sites",
+      "E-Commerce Setup",
+      "Website Maintenance & Support",
     ],
     images: [
-      "/images/marketing1.jpg",
-      "/images/marketing2.jpg",
-      "/images/marketing3.jpg",
-      "/images/marketing4.jpg",
+      "/images/web1.png",
+      "/images/web2.png",
+      "/images/web3.png",
+      "/images/web4.png",
     ],
-    portfolioUrl: "https://yourportfolio.com/digital-marketing",
+    portfolioUrl: "/portfolio",
   },
   {
     number: "4",
-    title: "Photography",
+    title: "3d Mockups",
     features: [
-      "Professional portrait sessions",
-      "Event photography",
-      "Product and commercial shoots",
-      "Photo editing and retouching",
+      "3D Product Mockups & Renders",
+      "Branded Storefront/Booth Visuals",
+      "Packaging in Realistic Scenes",
     ],
     images: [
-      "/images/photo1.jpg",
-      "/images/photo2.jpg",
-      "/images/photo3.jpg",
-      "/images/photo4.jpg",
+      "/videos/Porsche Video.mp4",
+      "/images/3d1.png",
+      "/images/3d2.png",
+      "/images/3d3.png",
     ],
-    portfolioUrl: "https://yourportfolio.com/photography",
+    portfolioUrl: "/portfolio",
   },
   {
     number: "5",
-    title: "Video Production",
+    title: "Marketing & Social",
     features: [
-      "Concept development and scripting",
-      "Filming and directing",
-      "Post-production editing",
-      "Animation and motion graphics",
+      "Content Calendars",
+      "Social Media Management",
+      "Hashtag & Trend Optimization",
+      "Influencer Coordination",
     ],
     images: [
-      "/images/video1.jpg",
-      "/images/video2.jpg",
-      "/images/video3.jpg",
-      "/images/video4.jpg",
+      "/images/Herbae.png",
+      "/videos/Drinks Ad Video.mp4",
+      "/images/food.png",
+      "/videos/Real Estate Post.webm",
     ],
-    portfolioUrl: "https://yourportfolio.com/video-production",
+    portfolioUrl: "/portfolio",
   },
 ];
 
@@ -175,7 +179,7 @@ export default function Main() {
                       </h2>
                     </div>
                     {/* Features Right */}
-                    <div className="w-full md:w-1/2 p-6 md:p-12 overflow-auto flex flex-col justify-center">
+                    <div className="w-full md:w-1/2 px-6 md:px-12 overflow-auto flex flex-col justify-center">
                       <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-gray-300 max-h-full">
                         {features.map((feature, i) => (
                           <li key={i}>{feature}</li>
@@ -185,33 +189,52 @@ export default function Main() {
                   </div>
 
                   {/* Bottom half */}
-                  <div className="w-full h-[55%] md:h-1/2 p-6 mb-8 md:p-8 flex flex-col">
+                  <div className="w-full h-[55%] md:h-1/2 px-5 pt-3 mb-8 md:p-8 flex flex-col">
                     {/* Portfolio link */}
-                    <Link
-                      href={portfolioUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mb-4 md:mb-6 inline-block text-teal-300 font-semibold hover:underline self-start md:self-end text-sm md:text-base"
-                    >
-                      View All Works
-                    </Link>
+                    <div className="mb-3 md:mb-6 flex justify-between items-center">
+                      <h3 className="pl-2 sm:pl-4 font-semibold text-xl md:text-3xl">
+                        Demo Works
+                      </h3>
+                      <Link
+                        href={portfolioUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mb-1 inline-block text-teal-300 font-semibold hover:underline self-end text-sm md:text-base"
+                      >
+                        View All Works
+                      </Link>
+                    </div>
                     {/* Images grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 flex-grow overflow-hidden rounded-md">
-                      {images.map((src, i) => (
-                        <div
-                          key={i}
-                          className="relative overflow-hidden aspect-video rounded-md"
-                        >
-                          <Image
-                            src={src}
-                            alt={`${title} work ${i + 1}`}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 50vw"
-                            priority={i === 0}
-                          />
-                        </div>
-                      ))}
+                    <div className="grid grid-cols-2 md:grid-cols-4 md:flex-grow gap-4 overflow-hidden rounded-md">
+                      {images.map((src, i) => {
+                        const isVideo =
+                          src.endsWith(".mp4") || src.endsWith(".webm");
+                        return (
+                          <div
+                            key={i}
+                            className="relative overflow-hidden max-sm:aspect-[4/3] rounded-md"
+                          >
+                            {isVideo ? (
+                              <video
+                                src={src}
+                                autoPlay
+                                muted
+                                loop
+                                className="w-full h-full object-cover rounded-md"
+                              />
+                            ) : (
+                              <Image
+                                src={src}
+                                alt={`${title} work ${i + 1}`}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                priority={i === 0}
+                              />
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </article>

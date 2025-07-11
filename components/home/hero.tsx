@@ -85,12 +85,12 @@ export default function Hero() {
           ref={(el) => {
             videoRefs.current[0] = el;
           }}
-          className="absolute top-[7%] max-md:top-[15%] left-[4%] w-32 md:w-40 lg:w-52 rounded-xl shadow-xl object-cover"
+          className="absolute top-[7%] max-md:top-[15%] left-[9%] w-50 md:w-75 lg:w-90 rounded-xl shadow-xl object-cover"
           autoPlay
           loop
           muted
           playsInline
-          src="/videos/Real Estate Ad Instagram Post.webm"
+          src="/videos/Logo Animation.mp4"
         />
 
         {/* Video 2 - Bottom Right */}
@@ -103,7 +103,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          src="/videos/Real Estate Ads Video.webm"
+          src="/videos/Coffee Ad Video.mp4"
         />
 
         {/* Video 3 - Left Center */}
@@ -111,12 +111,12 @@ export default function Hero() {
           ref={(el) => {
             videoRefs.current[2] = el;
           }}
-          className="absolute top-5/6  max-sm:top-[90%] left-[2%] transform -translate-y-1/2 w-26 md:w-36 lg:w-48 rounded-xl shadow-xl object-cover"
+          className="absolute top-5/6  max-sm:top-[90%] left-[5%] transform -translate-y-1/2 w-40 md:w-65 lg:w-80 rounded-xl shadow-xl object-cover"
           autoPlay
           loop
           muted
           playsInline
-          src="/videos/Real Estate Ad Instagram Post.webm"
+          src="/videos/Porsche Video.mp4"
         />
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Mail, Phone, Instagram, Facebook, Linkedin } from "lucide-react";
+import Link from "next/link";
 // import { SiWhatsapp } from "react-icons/si";
 
 export default function ContactInfo() {
@@ -11,27 +12,29 @@ export default function ContactInfo() {
 
         <div className="flex flex-col md:flex-row justify-center gap-10 text-[#092327]">
           {/* Phone */}
-          <a
-            href="tel:+1234567890"
+          <Link
+            href="tel:+919886738037"
             className="flex items-center gap-3 hover:text-[#c97f4e] transition"
           >
             <Phone />
-            <span className="text-lg font-medium">+1 234 567 890</span>
-          </a>
+            <span className="text-lg font-medium">+91 98867 38037</span>
+          </Link>
 
           {/* Email */}
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@example.com"
+          <Link
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=infomessydesk.digico@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:text-[#c97f4e] transition"
           >
             <Mail />
-            <span className="text-lg font-medium">hello@example.com</span>
-          </a>
+            <span className="text-lg font-medium">
+              infomessydesk.digico@gmail.com
+            </span>
+          </Link>
 
           {/* WhatsApp */}
-          <a
+          <Link
             href="https://wa.me/1234567890"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +43,7 @@ export default function ContactInfo() {
             {/* <img src="/whatsapp.svg" alt="WhatsApp" className="w-5 h-5" /> */}
             {/* <SiWhatsapp size={23} /> */}
             <span className="text-lg font-medium">WhatsApp Us</span>
-          </a>
+          </Link>
         </div>
 
         {/* Social Icons */}

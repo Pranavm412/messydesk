@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
-const categories = ["All", "Web", "Design", "Video", "3D", "Marketing"];
+const categories = ["All", "Design", "Video", "Web", "3D", "Marketing"];
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 // const projects = [
 //   {
@@ -70,7 +71,7 @@ import { projects } from "@/data/projects";
 //   },
 // ];
 
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 6;
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -118,27 +119,29 @@ export default function Projects() {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {paginatedProjects.map((project) => (
             <div
               key={project.id}
               className="bg-[#092327] rounded-lg overflow-hidden border border-teal-800"
             >
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-white text-lg font-semibold">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-gray-400 mt-1">{project.category}</p>
-              </div>
+              <Link href={project.url} target="_blank">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-white text-lg font-semibold">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-gray-400">{project.category}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
