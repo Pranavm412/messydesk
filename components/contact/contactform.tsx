@@ -1,39 +1,39 @@
 "use client";
-// import { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
-  // const form = useRef<HTMLFormElement>(null);
-  // const [isSent, setIsSent] = useState(false);
-  // const [error, setError] = useState(false);
+  const form = useRef<HTMLFormElement>(null);
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState(false);
 
-  // const sendEmail = (e: React.FormEvent) => {
-  //   const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-  //   const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-  //   const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
-  //   e.preventDefault();
+  const sendEmail = (e: React.FormEvent) => {
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+    e.preventDefault();
 
-  //   if (!form.current) return;
+    if (!form.current) return;
 
-  //   emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-  //     () => {
-  //       setIsSent(true);
-  //       setError(false);
-  //       form.current?.reset();
-  //     },
-  //     () => {
-  //       setError(true);
-  //     }
-  //   );
-  // };
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      () => {
+        setIsSent(true);
+        setError(false);
+        form.current?.reset();
+      },
+      () => {
+        setError(true);
+      }
+    );
+  };
 
   return (
     <section className="bg-[#092327] relative px-4 pb-20 z-0 text-[#092327]">
       <div className="absolute inset-0 bg-pattern-grids pointer-events-none -z-1" />
       <div className="max-w-3xl mx-auto">
         <form
-          // ref={form}
-          // onSubmit={sendEmail}
+          ref={form}
+          onSubmit={sendEmail}
           className="bg-[#f0ece1] p-6 rounded-xl shadow-lg space-y-6"
         >
           <div className="grid sm:grid-cols-2 gap-6">
@@ -81,10 +81,11 @@ export default function ContactForm() {
                 className="w-full border border-[#092327] rounded-md px-4 py-2 bg-[#f0ece1] focus:outline-none focus:ring-2 focus:ring-[#092327]"
               >
                 <option value="">Select a service</option>
-                <option value="Wedding">Wedding</option>
-                <option value="Ad Shoots">Ad Shoots</option>
-                <option value="Food">Food</option>
-                <option value="Design">Design</option>
+                <option value="design">Branding & Design</option>
+                <option value="video">Video Production</option>
+                <option value="web">Web Design</option>
+                <option value="3d">3D Mockups</option>
+                <option value="marketing">Marketing & Social</option>
               </select>
             </div>
           </div>
@@ -105,16 +106,16 @@ export default function ContactForm() {
           >
             Send Message
           </button>
-          {/* {isSent && (
+          {isSent && (
             <p className="text-green-600 text-sm mt-2 text-center">
               ✅ Your message was sent successfully!
             </p>
-          )} */}
-          {/* {error && (
+          )}
+          {error && (
             <p className="text-red-600 text-sm mt-2 text-center">
               ❌ Something went wrong. Please try again later.
             </p>
-          )} */}
+          )}
         </form>
       </div>
     </section>

@@ -3,7 +3,13 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import {
+  SiUpwork,
+  SiFreelancer,
+  SiGumroad,
+  SiFiverr,
+  SiLinkedin,
+} from "react-icons/si";
 
 export default function Footer() {
   const footerRef = useRef<HTMLDivElement>(null);
@@ -54,16 +60,47 @@ export default function Footer() {
         </nav>
 
         {/* Right: Socials */}
-        <div className="flex justify-center space-x-4 text-gray-400">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            <Instagram className="w-5 h-5 hover:text-yellow-400 transition" />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-            <Linkedin className="w-5 h-5 hover:text-yellow-400 transition" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <Twitter className="w-5 h-5 hover:text-yellow-400 transition" />
-          </a>
+        <div className="flex justify-center space-x-5 text-gray-400">
+          <Link
+            href="https://gumroad.com/dashboard"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white"
+          >
+            <SiGumroad size={20} />
+          </Link>
+          <Link
+            href="https://www.freelancer.com/u/messydesks09"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white"
+          >
+            <SiFreelancer size={20} />
+          </Link>
+          <Link
+            href="https://www.fiverr.com/messydeskstudio/buying?source=avatar_menu_profile"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white"
+          >
+            <SiFiverr size={20} />
+          </Link>
+          <Link
+            href="https://www.upwork.com/freelancers/~012baa97879989ad07?qpn-profile-completeness=employment"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white"
+          >
+            <SiUpwork size={20} />
+          </Link>
+          <Link
+            href="http://www.linkedin.com/in/messy-desk-studio-746b24372"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white"
+          >
+            <SiLinkedin size={20} />
+          </Link>
         </div>
       </div>
 

@@ -42,7 +42,7 @@ const services = [
     ],
     images: [
       "/videos/Logo Animation.mp4",
-      "/videos/Real Estate Post.webm",
+      "/videos/Logo Animation 2.mp4",
       "/videos/Smoothie Bowl Ad.mp4",
       "/videos/Coffee Ad Video.mp4",
     ],

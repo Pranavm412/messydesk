@@ -8,69 +8,6 @@ const categories = ["All", "Design", "Video", "Web", "3D", "Marketing"];
 import { projects } from "@/data/projects";
 import Link from "next/link";
 
-// const projects = [
-//   {
-//     id: 1,
-//     title: "Landing Page",
-//     image: "/images/projects/web1.jpg",
-//     category: "Web",
-//   },
-//   {
-//     id: 2,
-//     title: "Brand Identity",
-//     image: "/images/projects/graphic1.jpg",
-//     category: "Graphic",
-//   },
-//   {
-//     id: 3,
-//     title: "Promo Video",
-//     image: "/images/projects/video1.jpg",
-//     category: "Video",
-//   },
-//   {
-//     id: 4,
-//     title: "Portrait Shoot",
-//     image: "/images/projects/photo1.jpg",
-//     category: "Photo",
-//   },
-//   {
-//     id: 5,
-//     title: "Mobile UI",
-//     image: "/images/projects/web2.jpg",
-//     category: "Web",
-//   },
-//   {
-//     id: 6,
-//     title: "Logo Design",
-//     image: "/images/projects/graphic2.jpg",
-//     category: "Graphic",
-//   },
-//   {
-//     id: 7,
-//     title: "Product Ad",
-//     image: "/images/projects/video2.jpg",
-//     category: "Video",
-//   },
-//   {
-//     id: 8,
-//     title: "Studio Shot",
-//     image: "/images/projects/photo2.jpg",
-//     category: "Photo",
-//   },
-//   {
-//     id: 9,
-//     title: "eCommerce Web",
-//     image: "/images/projects/web3.jpg",
-//     category: "Web",
-//   },
-//   {
-//     id: 10,
-//     title: "Flyer Design",
-//     image: "/images/projects/graphic3.jpg",
-//     category: "Graphic",
-//   },
-// ];
-
 const ITEMS_PER_PAGE = 6;
 
 export default function Projects() {

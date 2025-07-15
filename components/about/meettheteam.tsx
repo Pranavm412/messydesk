@@ -6,32 +6,32 @@ const team = [
   {
     name: "Anurag",
     role: "Motion Graphics Designer",
-    image: "/team/ava.jpg", // replace with real images
+    image: "/images/Anurag.jpg", // replace with real images
   },
   {
     name: "Arvind",
     role: "Video Editor",
-    image: "/team/kunal.jpg",
+    image: "/images/Arvind.jpg",
   },
   {
-    name: "Moon",
+    name: "Mrigashira",
     role: "Graphic Designer",
-    image: "/team/sara.jpg",
+    image: "/images/Mrigashira.jpg",
   },
   {
     name: "Nived",
     role: "3D Modeller",
-    image: "/team/jordan.jpg",
+    image: "/images/Nived.jpg",
   },
   {
     name: "Pranav",
     role: "Web Designer",
-    image: "/team/nina.jpg",
+    image: "/images/Pranav.jpg",
   },
   {
-    name: "Sidhu",
+    name: "Siddarth",
     role: "3D Designer",
-    image: "/team/leo.jpg",
+    image: "/images/Siddarth.jpg",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function MeetTheTeam() {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover"
+                  className="object-cover scale-130"
                 />
               </div>
               <h3 className="text-xl font-semibold">{member.name}</h3>
