@@ -3,6 +3,11 @@ import Navbar from "@/components/common/navbar";
 import CTASection from "@/components/portfolio/cta";
 import Header from "@/components/portfolio/header";
 import Projects from "@/components/portfolio/projects";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+};
 
 export default function Portfolio() {
   return (

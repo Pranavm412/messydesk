@@ -6,6 +6,11 @@ import OurStory from "@/components/about/ourstory";
 import WhyWorkWithUs from "@/components/about/whyworkwithus";
 import Footer from "@/components/common/footer";
 import Navbar from "@/components/common/navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function About() {
   return (

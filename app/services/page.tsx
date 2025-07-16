@@ -4,6 +4,11 @@ import CTASection from "@/components/services/cta";
 import FAQ from "@/components/services/faq";
 import Header from "@/components/services/header";
 import ServicesStack from "@/components/services/services";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+};
 
 export default function Services() {
   return (
