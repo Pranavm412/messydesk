@@ -8,6 +8,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services",
+  alternates: {
+    canonical: "https://messydesk.vercel.app/services",
+  },
 };
 
 export default function Services() {

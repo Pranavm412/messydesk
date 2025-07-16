@@ -8,6 +8,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
+  alternates: {
+    canonical: "https://messydesk.vercel.app/contact",
+  },
 };
 
 export default function Contact() {

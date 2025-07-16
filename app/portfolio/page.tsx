@@ -7,6 +7,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Portfolio",
+  alternates: {
+    canonical: "https://messydesk.vercel.app/portfolio",
+  },
 };
 
 export default function Portfolio() {
