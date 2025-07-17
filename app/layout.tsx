@@ -10,11 +10,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Messy Desk Studio",
-    template: "%s - Messy Desk Studio",
+    default: "Messy Desk Studio - Studio For All Your Creative Needs",
+    template: "%s | Messy Desk Studio - For All Your Creative Needs",
   },
   description:
-    "Messy Desk Studio is a remote-first creative studio crafting bold visual content across web, design, and storytelling. We help brands grow with purpose-driven design and fast, startup-friendly execution.",
+    "Messy Desk Studio is a creative studio crafting original, design-driven solutions, from branding to marketing, for brands that want to grow and stand out.",
   alternates: {
     canonical: "https://messydesk.vercel.app",
   },
