@@ -5,19 +5,24 @@ const baseUrl=process.env.NEXT_PUBLIC_BASE_URL
 export default function sitemap(): MetadataRoute.Sitemap {
     return[
         {
-            url :`${baseUrl}`
+            url :`${baseUrl}`,
+            lastModified:new Date('2025-07-16')
         },
         {
-            url :`${baseUrl}/services`
+            url :`${baseUrl}/services`,
+            lastModified:new Date('2025-07-16')
         },
         {
-            url :`${baseUrl}/portfolio`
+            url :`${baseUrl}/portfolio`,
+            lastModified:new Date('2025-07-16')
         },
         {
-            url :`${baseUrl}/about`
+            url :`${baseUrl}/about`,
+            lastModified:new Date('2025-07-16')
         },
         {
-            url :`${baseUrl}/contact`
+            url :`${baseUrl}/contact`,
+            lastModified:new Date('2025-07-16')
         }
     ]
 };
