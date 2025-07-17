@@ -21,6 +21,18 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  openGraph: {
+    title: {
+      default: "Messy Desk Studio - Studio For All Your Creative Needs",
+      template: "%s | Messy Desk Studio - For All Your Creative Needs",
+    },
+    description:
+      "Messy Desk Studio is a creative studio crafting original, design-driven solutions, from branding to marketing, for brands that want to grow and stand out.",
+    siteName: "Messy Desk Studio",
+    url: "https://messydesk.vercel.app",
+    type: "website",
+    locale: "en_US",
+  },
   verification: {
     google: "jQY8RqkMhrbLDozMeONI08IsGXkMQaXI8UcFGbmQXdo",
   },
